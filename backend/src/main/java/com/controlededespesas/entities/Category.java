@@ -3,21 +3,19 @@ package com.controlededespesas.entities;
 import lombok.*;
 import org.hibernate.Hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
-@Entity
+
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
+@AllArgsConstructor
+@Table(name= "categoria")
+@NoArgsConstructor
 public class Category {
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
 
+    private Long id;
     private String name;
     private Double amount;
 
