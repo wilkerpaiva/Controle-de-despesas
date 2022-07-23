@@ -23,6 +23,9 @@ public class Launch {
     @Enumerated(EnumType.STRING)
     private LaunchType type;
 
+    @Column(name = "name")
+    private String name;
+
     @Column(nullable = false, name = "amount")
     private Double amount;
 
