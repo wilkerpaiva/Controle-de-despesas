@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jaldi', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    margin-top: 50px;
+}
+
+main h1 {
+    font-size: 30px;
+    color: #fff;
+    align-self: center;
+}
+
+.balance-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    min-width: 460px;
+    flex-wrap: wrap;
+}
+
+.balance {
+    font-size: 22px;
+    color: #fff;
+}
+
+.n-balance {
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #fff;
+}
+
+.balance-box {
+    background-color: #fff;
+    height: 121px;
+    min-width: 460px;
+    border: 2px solid #545454;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px #000000);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.income {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #d4d4d4;
+    width: 100%;
+}
+
+.expense {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title-t {
+    font-size: 22px;
+    margin-bottom: -15px;
+}
+
+.value-v {
+    font-size: 33px;
+    font-weight: bold;
+    color: #61FF00;
+}
+
+.value-e {
+    font-size: 33px;
+    font-weight: bold;
+    color: #ff0000;
+}
