@@ -1,9 +1,9 @@
 package com.controlededespesas.controllers;
 
+import com.controlededespesas.config.SecurityConfig;
 import com.controlededespesas.entities.Launch;
 import com.controlededespesas.repositories.LaunchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -14,6 +14,9 @@ import java.util.List;
 @RequestMapping("/api/launch")
 public class LaunchController {
 
+
+    @Autowired
+    private SecurityConfig securityConfig;
     @Autowired
     private LaunchRepository launchRepository;
 
@@ -47,13 +50,7 @@ public class LaunchController {
         launchRepository.delete(launchOptional.get());
     }
 
-    @DeleteMapping("/{id}")
-    @ResponseStatus(code = HttpStatus.NO_CONTENT)
-    public void excluirPorId(@PathVariable Long id) {
-        var clienteOptional = launchRepository.findById(id);
-        if (clienteOptional.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-        }
-        launchRepository.delete(clienteOptional.get());
-    }
+
+
+
 }
