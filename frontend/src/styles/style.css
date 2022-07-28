@@ -9,6 +9,8 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #1e1e1e;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 main {
@@ -22,6 +24,10 @@ main h1 {
     font-size: 30px;
     color: #fff;
     align-self: center;
+}
+
+label {
+    color: #fff;
 }
 
 .balance-container {
@@ -40,7 +46,7 @@ main h1 {
 .n-balance {
     font-size: 30px;
     font-weight: bold;
-
+    margin-left: 10px;
     color: #fff;
 }
 
@@ -54,7 +60,7 @@ main h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .income {
@@ -89,4 +95,130 @@ main h1 {
     font-size: 33px;
     font-weight: bold;
     color: #ff0000;
+}
+
+.transactions-history{
+    margin-top: 20px;
+}
+
+.history-title {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #545454;
+}
+
+.history-items{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-item-income {
+    z-index: 2;
+    height: 32px;
+    width: 460px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-right: 15px solid #61FF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.history-item-expense {
+    z-index: 2;
+    height: 32px;
+    width: 460px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-right: 15px solid #ff0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.history-description {
+    margin-left: 10px;
+}
+
+.history-value {
+    margin-right: 5px;
+}
+
+.delete-btn {
+ z-index: 1;
+    background-color: #585858;
+    border: 0;
+    border-radius: 10px;
+    height: 32px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 20px;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.delete-btn img {
+    height: 17px;
+    width: 14px;
+    margin-left: -13px;
+}
+
+.add-transaction {
+    margin-top: 25px;
+}
+
+.add-transaction-title {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #585858;
+    margin-bottom: 10px;
+}
+
+#addtipo {
+    width: 460px;
+    height: 37px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#add-description {
+    box-sizing: border-box;
+    padding: 0px 10px;
+    width: 460px;
+    border-radius: 10px;
+    border: 1px solid #585858;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#add-value {
+    box-sizing: border-box;
+    padding: 0px 10px;
+    font-size: 20PX;
+    width: 460px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #585858;
+}
+
+.form-btn {
+    box-sizing: border-box;
+    width: 460px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    height: 32px;
+    border: 1px solid #585858;
+    color: #585858;
+    cursor: pointer;
 }
